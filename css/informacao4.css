@@ -1,0 +1,99 @@
+/* Estilos para a seção Informação 4 */
+.informacao-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Faz com que os filhos tenham a mesma altura */
+    justify-content: space-between;
+    padding: 60px 20%; /* Padding interno */
+    background-color: var(--cor-fundopreto); /* Fundo escuro */
+    color: var(--cor-texto-claro); /* Texto branco */
+    width: 100%; /* Ocupa 100% da largura da tela */
+}
+
+.informacao-4 .texto-esquerda {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.informacao-4 .texto-esquerda h2 {
+    font-size: 30px; /* Tamanho do título */
+    color: var(--cor-texto-claro); /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.informacao-4 .texto-esquerda p {
+    font-size: 20px; /* Tamanho do parágrafo */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.informacao-4 .imagem-direitaa {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+/* Classe específica para aumentar o tamanho da imagem na seção informacao-4 */
+.informacao-4 .imagem-grande {
+    max-width: 120%; /* Aumenta o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .informacao-4 {
+        flex-direction: column;
+        padding: 40px 20px; /* Ajuste do padding para telas menores */
+    }
+
+    .informacao-4 .texto-esquerda,
+    .informacao-4 .imagem-direitaa {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .informacao-4 .texto-esquerda {
+        margin-bottom: 20px;
+        justify-content: flex-start; /* Alinha o texto no topo em telas menores */
+    }
+
+    .informacao-4 .imagem-direitaa {
+        align-items: flex-start; /* Alinha a imagem no topo em telas menores */
+    }
+
+    .informacao-4 .texto-esquerda h2 {
+        font-size: 18px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .informacao-4 .texto-esquerda p {
+        font-size: 24px; /* Reduz o tamanho do parágrafo em telas menores */
+    }
+
+    .informacao-4 .imagem-grande {
+        max-width: 100%; /* Reduz o tamanho da imagem em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .informacao-4 {
+        padding: 30px 15px; /* Ajuste do padding para telas pequenas */
+        width: 100%; /* Garante que ocupe toda a largura */
+        margin: 0; /* Remove margens */
+    }
+
+    .informacao-4 .texto-esquerda h2 {
+        font-size: 16px; /* Reduz ainda mais o tamanho do título em telas pequenas */
+    }
+
+    .informacao-4 .texto-esquerda p {
+        font-size: 20px; /* Reduz ainda mais o tamanho do parágrafo em telas pequenas */
+    }
+}

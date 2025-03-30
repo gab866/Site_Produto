@@ -1,0 +1,114 @@
+:root {
+    --cor-primaria: #7dbeff; /* Azul marinho */
+    --cor-secundaria: #ffffff; /* Branco */
+    --cor-destaque: #383737; /* Vermelho (pode ser removido ou substituído) */
+    --cor-fundo: #f4f4f4; /* Cor de fundo do body */
+    --cor-fundopreto: #000;
+    --cor-texto: #1d1d1d; /* Cor do texto principal */
+    --cor-texto-claro: #fff; /* Cor do texto claro (sobre fundos escuros) */
+    --cor-estrela: #a19400;
+}
+
+body {
+    font-family: "Roboto", sans-serif; /* Nova fonte: Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+header .promo-banner {
+    background-color: var(--cor-primaria); /* Azul marinho */
+    color: var(--cor-texto-claro);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (tablets e celulares) */
+
+/*------------------------------- BOTÃO */
+@keyframes pulsar {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta um pouco */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.botao-centralizado {
+    width: 100%; /* Ocupa toda a largura da tela */
+    text-align: center; /* Centraliza o botão horizontalmente */
+    margin-top: 40px; /* Espaçamento acima do botão */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: linear-gradient(145deg, #1a8105bb, #27b902);
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    transition: all 0.3s ease;
+    animation: pulsar 2s infinite;
+}
+
+.cta-button:hover {
+    background: linear-gradient(145deg, #04c90eda, #13e400);
+    box-shadow: 0 0 30px rgba(2, 204, 2, 0.678); /* Brilho mais suave */
+    transform: scale(1.1); /* Aumento de tamanho mais sutil */
+    animation: none;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.destaque-azul {
+    color: var(--cor-primaria); /* Azul marinho */
+    font-weight: bold; /* Opcional: Deixa o texto em negrito */
+}
+

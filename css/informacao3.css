@@ -1,0 +1,111 @@
+/* Estilos para a section Informação 3 */
+.informacao-3 {
+    padding: 60px 20%; /* Mesmo padding das outras sections */
+    background-color: var(--cor-texto); /* Fundo azul marinho */
+    color: var(--cor-texto-claro); /* Texto branco */
+}
+
+/* Título centralizado */
+.titulo-centralizado {
+    text-align: center; /* Centraliza o título */
+    font-size: 30px; /* Tamanho do título */
+    color: var(--cor-texto-claro); /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Destaque azul no título */
+.titulo-centralizado .destaque-azul {
+    color: var(--cor-primaria); /* Azul marinho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Descrição centralizada */
+.descricao-centralizada {
+    text-align: center; /* Centraliza o texto */
+    font-size: 20px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    margin-bottom: 40px; /* Espaçamento abaixo do texto */
+}
+
+/* Destaque azul na descrição */
+.descricao-centralizada .destaque-azul {
+    color: var(--cor-primaria); /* Azul marinho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Contêiner dos blocos */
+.blocos-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os blocos horizontalmente */
+    flex-wrap: wrap; /* Permite que os blocos quebrem para a próxima linha em telas pequenas */
+    gap: 20px; /* Espaçamento entre os blocos */
+}
+
+/* Estilo de cada bloco */
+.bloco {
+    flex: 1;
+    max-width: calc(25% - 15px);
+    text-align: center;
+    background: linear-gradient(to top, #575757, #000000 50%); /* Branco ocupa 70% do espaço */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 19, 189, 0.1);
+}
+/* Estilo da imagem do bloco */
+.bloco-imagem {
+    width: 80%; /* Reduz o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo do texto do bloco */
+.bloco-texto {
+    font-size: 24px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto (preto) */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    font-weight: bold;
+}
+
+.bloco-descricao {
+    font-size: 20px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto (preto) */
+    margin-top: 10px; /* Espaçamento acima do texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bloco {
+        max-width: calc(50% - 20px); /* Dois blocos por linha em telas menores */
+    }
+
+    .titulo-centralizado {
+        font-size: 30px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .descricao-centralizada {
+        font-size: 20px; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    .bloco-texto {
+        font-size: 20px; /* Reduz o tamanho do texto dos blocos */
+    }
+}
+
+@media (max-width: 480px) {
+    .bloco {
+        max-width: 100%; /* Um bloco por linha em telas pequenas */
+    }
+
+    .titulo-centralizado {
+        font-size: 24px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .descricao-centralizada {
+        font-size: 18px; /* Reduz ainda mais o tamanho do texto */
+    }
+
+    .bloco-texto {
+        font-size: 18px; /* Reduz ainda mais o tamanho do texto dos blocos */
+    }
+}

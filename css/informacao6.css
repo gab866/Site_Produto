@@ -1,0 +1,135 @@
+/* Estilos para a section Informação 6 */
+.informacao-6 {
+    padding: 60px 20%; /* Mesmo padding das outras sections */
+    background-color: var(--cor-texto); /* Fundo escuro */
+    color: var(--cor-texto-claro); /* Texto branco */
+}
+
+/* Título centralizado */
+.informacao-6 .titulo-centralizado {
+    text-align: center; /* Centraliza o título */
+    font-size: 30px; /* Tamanho do título */
+    color: var(--cor-texto-claro); /* Cor do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+/* Destaque azul no título */
+.informacao-6 .titulo-centralizado .destaque-azul {
+    color: var(--cor-primaria); /* Azul marinho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Contêiner dos feedbacks */
+.feedbacks-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os feedbacks horizontalmente */
+    flex-wrap: wrap; /* Permite que os feedbacks quebrem para a próxima linha em telas pequenas */
+    gap: 20px; /* Espaçamento entre os feedbacks */
+}
+
+/* Estilo de cada feedback */
+.feedback {
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Define a largura de cada feedback */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo da imagem do cliente */
+.feedback-imagem {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo do nome do cliente */
+.feedback-nome {
+    font-size: 20px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do nome */
+    font-weight: bold;
+}
+
+/* Estilo do depoimento do cliente */
+.feedback-depoimento {
+    font-size: 16px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    font-style: italic; /* Texto em itálico */
+}
+
+/* Estilo para as estrelas */
+.feedback-estrelas {
+    display: flex;
+    justify-content: center; /* Centraliza as estrelas */
+    gap: 5px; /* Espaçamento entre as estrelas */
+    margin-top: 10px; /* Espaçamento acima das estrelas */
+}
+
+.feedback-estrelas svg {
+    width: 20px; /* Tamanho das estrelas */
+    height: 20px;
+    fill: var(--cor-estrela); /* Cor azul marinho */
+}
+
+/* Responsividade para as estrelas */
+@media (max-width: 768px) {
+    .feedback-estrelas svg {
+        width: 18px; /* Reduz o tamanho das estrelas em telas menores */
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-estrelas svg {
+        width: 16px; /* Reduz ainda mais o tamanho das estrelas em telas pequenas */
+        height: 16px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .feedback {
+        max-width: calc(50% - 20px); /* Dois feedbacks por linha em telas menores */
+    }
+
+    .informacao-6 .titulo-centralizado {
+        font-size: 24px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .feedback-imagem {
+        width: 80px; /* Reduz o tamanho da imagem em telas menores */
+        height: 80px;
+    }
+
+    .feedback-nome {
+        font-size: 18px; /* Reduz o tamanho do nome em telas menores */
+    }
+
+    .feedback-depoimento {
+        font-size: 14px; /* Reduz o tamanho do depoimento em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback {
+        max-width: 100%; /* Um feedback por linha em telas pequenas */
+    }
+
+    .informacao-6 .titulo-centralizado {
+        font-size: 20px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .feedback-imagem {
+        width: 60px; /* Reduz ainda mais o tamanho da imagem em telas pequenas */
+        height: 60px;
+    }
+
+    .feedback-nome {
+        font-size: 16px; /* Reduz ainda mais o tamanho do nome */
+    }
+
+    .feedback-depoimento {
+        font-size: 12px; /* Reduz ainda mais o tamanho do depoimento */
+    }
+}

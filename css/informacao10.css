@@ -1,0 +1,107 @@
+/* Estilos para a section Informação 10 - Perguntas Frequentes */
+.informacao-10 {
+    padding: 60px 20%;
+    background-color: var(--cor-fundopreto);
+    color: var(--cor-texto-claro);
+}
+
+.informacao-10 .titulo-centralizado {
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor-texto-claro);
+    margin-bottom: 40px;
+}
+
+.informacao-10 .titulo-centralizado .destaque-azul {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to top, #aaaaaa, #ffffff 50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    content: '-';
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    font-size: 18px;
+    color: var(--cor-fundopreto);
+    line-height: 1.5;
+}
+
+.faq-answer.open {
+    padding: 0 20px 20px;
+    max-height: 500px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .informacao-10 {
+        padding: 40px 20px;
+    }
+    
+    .informacao-10 .titulo-centralizado {
+        font-size: 24px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .informacao-10 .titulo-centralizado {
+        font-size: 20px;
+    }
+    
+    .faq-question {
+        font-size: 16px;
+    }
+    
+    .faq-answer {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,316 @@
+/* Estilos para a section Informação 8 */
+.informacao-8 {
+    padding: 60px 20%; /* Mesmo padding das outras sections */
+    background-color: var(--cor-fundopreto); /* Fundo escuro */
+    color: var(--cor-texto-claro); /* Texto branco */
+}
+
+/* Título centralizado */
+.informacao-8 .titulo-centralizado {
+    text-align: center; /* Centraliza o título */
+    font-size: 30px; /* Tamanho do título */
+    color: var(--cor-texto-claro); /* Cor do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+/* Contêiner dos blocos */
+.informacao-8 .blocos-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os blocos horizontalmente */
+    flex-wrap: wrap; /* Permite que os blocos quebrem para a próxima linha em telas pequenas */
+    gap: 5px; /* Espaçamento entre os blocos */
+    
+}
+
+/* Estilo de cada bloco */
+.informacao-8 .bloconovo {
+    flex: 1;
+    max-width: calc(25% - 20px); /* Define a largura de cada bloco */
+    text-align: center;
+    background-color: var(--cor-fundo); /* Mudei de var(--cor-fundopreto) para branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden;
+    display: flex; /* Usar flexbox para o layout */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo da imagem do produto */
+.informacao-8 .bloco-imagem {
+    max-width: 100%; /* Largura fixa */
+    height: auto; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo do preço */
+.informacao-8 .bloco-preco {
+    font-size: 24px; /* Tamanho do texto */
+    color: #09b609ef; /* Cor verde */
+    margin-top: 15px; /* Espaçamento abaixo do preço */
+    font-weight: bold;
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Evita que o texto vaze para fora */
+   
+}
+
+/* Estilo do parcelamento */
+.informacao-8 .bloco-preco .parcelamento {
+    font-size: 18px; /* Tamanho menor que o preço */
+    color: #09b609ef; /* Mesma cor verde do preço */
+    font-weight: 300; /* Fonte mais fina */
+    margin-right: 15px; /* Espaçamento entre o "12x" e o preço */
+}
+
+/* Estilo do botão */
+.informacao-8 .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #1a8105bb, #27b902);
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    transition: all 0.3s ease;
+    animation: pulsar 2s infinite;
+}
+
+.informacao-8 .cta-button:hover {
+    background: linear-gradient(145deg, #04c90eda, #13e400);
+    box-shadow: 0 0 30px rgba(2, 204, 2, 0.678);
+    transform: scale(1.1);
+    animation: none;
+}
+
+/* Estilo da frase "preço com desconto" */
+.informacao-8 .preco-desconto {
+    font-size: 14px; /* Tamanho menor */
+    color: #808080; /* Cor cinza */
+    margin-top: 10px; /* Ajuste de espaçamento acima da frase */
+    margin-bottom: 15px; /* Espaçamento abaixo da frase */
+}
+
+/* Estilo da classe frete */
+.informacao-8 .frete {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #ff0000; /* Cor vermelha */
+    font-weight: bold; /* Fonte mais gordinha */
+    margin-top: 10px; /* Espaçamento acima da frase */
+}
+
+/* Estilo do ícone SVG */
+.informacao-8 .frete svg {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+    fill: #ff0000; /* Cor vermelha */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo da imagem dos correios */
+.informacao-8 .correios {
+    width: 100px; /* Tamanho reduzido */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Espaçamento acima da imagem */
+    display: block; /* Garante que a imagem ocupe a linha inteira */
+    margin-left: auto; /* Centraliza a imagem */
+    margin-right: auto; /* Centraliza a imagem */
+}
+
+/* Estilo da classe tratamento */
+.informacao-8 .tratamento {
+    display: inline-block;
+    padding: 5px 15px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    font-size: 13px; /* Tamanho da fonte */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+    animation: pulsar 2s infinite; /* Mesma animação do botão */
+}
+
+/* Animação de pulsar */
+@keyframes pulsar {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta um pouco */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
+
+/* Estilo da classe mais-vendido */
+.informacao-8 .mais-vendido {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 3px 15px; /* Espaçamento interno */
+    background: linear-gradient(12deg, #bb9f00, #575212); /* Gradiente amarelo e preto */
+    color: #ffffff; /* Cor do texto */
+    font-size: 13px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte mais gordinha */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+ /* Move a classe mais para cima */
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+    animation: pulsar 2s infinite; /* Mesma animação do botão */
+}
+
+/* Estilo do ícone SVG */
+.informacao-8 .mais-vendido svg {
+    width: 15px; /* Tamanho do ícone */
+    height: 20px;
+    fill: #ffffff; /* Cor branca */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .informacao-8 .blocos-container {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        gap: 20px; /* Aumenta o espaçamento entre os blocos */
+    }
+
+    .informacao-8 .bloconovo {
+        max-width: 80%; /* Define uma largura menor para os blocos */
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    }
+
+    .informacao-8 .titulo-centralizado {
+        font-size: 24px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .informacao-8 .bloco-imagem {
+        width: 100px; /* Reduz o tamanho da imagem em telas menores */
+        height: 180px;
+    }
+
+    .informacao-8 .bloco-preco {
+        font-size: 20px; /* Reduz o tamanho do preço em telas menores */
+        white-space: normal;
+    }
+
+    .informacao-8 .bloco-preco .parcelamento {
+        font-size: 16px; /* Reduz o tamanho do parcelamento em telas menores */
+    }
+
+    .informacao-8 .cta-button {
+        font-size: 14px; /* Reduz o tamanho do botão em telas menores */
+    }
+
+    .informacao-8 .preco-desconto {
+        font-size: 12px; /* Reduz o tamanho da frase em telas menores */
+    }
+    .informacao-8 .frete {
+        font-size: 12px; /* Reduz o tamanho da frase em telas menores */
+    }
+
+    .informacao-8 .frete {
+        font-size: 14px; /* Reduz o tamanho da frase em telas menores */
+    }
+
+    .informacao-8 .frete svg {
+        width: 16px; /* Reduz o tamanho do ícone em telas menores */
+        height: 16px;
+    }
+
+    .informacao-8 .correios {
+        width: 80%; /* Reduz a largura para 80% do bloco em telas menores */
+        max-width: 80px; /* Limita a largura máxima */
+    }
+
+    .informacao-8 .tratamento {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        padding: 4px 12px; /* Reduz o padding em telas menores */
+    }
+
+    .informacao-8 .mais-vendido {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        padding: 4px 12px; /* Reduz o padding */
+    }
+
+    .informacao-8 .mais-vendido svg {
+        width: 16px; /* Reduz o tamanho do ícone */
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .informacao-8 .bloconovo {
+        max-width: 90%; /* Aumenta um pouco a largura para telas muito pequenas */
+        width: 100%;
+    }
+
+    .informacao-8 .titulo-centralizado {
+        font-size: 20px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .informacao-8 .bloco-imagem {
+        width: 80px; /* Reduz ainda mais o tamanho da imagem em telas pequenas */
+        height: 150px;
+    }
+
+    .informacao-8 .bloco-preco {
+        font-size: 18px; /* Reduz ainda mais o tamanho do preço */
+        white-space: normal;
+    }       
+
+    .informacao-8 .bloco-preco .parcelamento {
+        font-size: 14px; /* Reduz ainda mais o tamanho do parcelamento */
+    }
+
+    .informacao-8 .cta-button {
+        font-size: 12px; /* Reduz ainda mais o tamanho do botão */
+    }
+
+    .informacao-8 .preco-desconto {
+        font-size: 10px; /* Reduz ainda mais o tamanho da frase */
+    }
+
+    .informacao-8 .frete {
+        font-size: 10px; /* Reduz ainda mais o tamanho da frase */
+    }
+
+    .informacao-8 .frete {
+        font-size: 12px; /* Reduz ainda mais o tamanho da frase */
+    }
+
+    .informacao-8 .frete svg {
+        width: 14px; /* Reduz ainda mais o tamanho do ícone */
+        height: 14px;
+    }
+
+    .informacao-8 .correios {
+        width: 70%; /* Reduz ainda mais a largura para 70% do bloco em telas pequenas */
+        max-width: 60px; /* Limita a largura máxima */
+    }
+
+    .informacao-8 .tratamento {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 3px 10px; /* Reduz ainda mais o padding */
+    }
+
+    .informacao-8 .mais-vendido {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 3px 10px; /* Reduz ainda mais o padding */
+    }
+
+    .informacao-8 .mais-vendido svg {
+        width: 14px; /* Reduz ainda mais o tamanho do ícone */
+        height: 14px;
+    }
+}

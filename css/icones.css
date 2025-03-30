@@ -1,0 +1,106 @@
+/* Estilos para a section icones */
+.icones {
+    padding: 40px 5%;
+    background-color: var(--cor-fundopreto);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+.feedback-icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 10px 0;
+}
+
+.feedback-icones > div {
+    flex: 0 0 auto; /* Não cresce, não encolhe, tamanho automático */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.feedback-icones svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--cor-primaria);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feedback-icones svg:hover {
+    transform: scale(1.1);
+}
+
+.feedback-icones p {
+    font-size: 10px;
+    color: var(--cor-texto-claro);
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 992px) {
+    .feedback-icones {
+        gap: 15px;
+    }
+    
+    .feedback-icones > div {
+        min-width: 100px;
+    }
+    
+    .feedback-icones svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .feedback-icones p {
+        font-size: 13px;
+    }
+}
+
+/* Ajustes para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .feedback-icones {
+        gap: 10px;
+        justify-content: flex-start; /* Permite rolagem horizontal */
+        padding: 10px 20px;
+    }
+    
+    .feedback-icones > div {
+        min-width: 90px;
+    }
+    
+    .feedback-icones svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .feedback-icones p {
+        font-size: 12px;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .feedback-icones {
+        gap: 8px;
+    }
+    
+    .feedback-icones > div {
+        min-width: 80px;
+    }
+    
+    .feedback-icones svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .feedback-icones p {
+        font-size: 11px;
+    }
+}

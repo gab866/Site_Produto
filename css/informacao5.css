@@ -1,0 +1,91 @@
+/* Estilos para a section Informação 5 */
+.informacao-5 {
+    padding: 60px 20%; /* Mesmo padding das outras sections */
+    background-color: var(--cor-fundopreto); /* Fundo escuro */
+    color: var(--cor-texto-claro); /* Texto branco */
+}
+
+.informacao-5 .titulo-centralizado {
+    text-align: center; /* Centraliza o título */
+    font-size: 30px; /* Tamanho do título */
+    color: var(--cor-texto-claro); /* Cor do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.informacao-5 .titulo-centralizado .destaque-azul {
+    color: var(--cor-primaria); /* Azul marinho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Contêiner dos blocos */
+.informacao-5 .blocos-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os blocos horizontalmente */
+    flex-wrap: wrap; /* Permite que os blocos quebrem para a próxima linha em telas pequenas */
+    gap: 10px; /* Reduz o espaçamento entre os blocos */
+}
+
+/* Estilo de cada bloco */
+.informacao-5 .bloco {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Aumenta a largura dos blocos e reduz o espaçamento */
+    text-align: center;
+    background: linear-gradient(to top, #575757, #1f1f1f 50%); /* Gradiente de fundo */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 10px 20px rgba(0, 19, 189, 0.1); /* Sombra suave */
+}
+
+/* Estilo das imagens redondas */
+.informacao-5 .bloco-imagem-redonda {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo do texto do bloco */
+.informacao-5 .bloco-texto {
+    font-size: 24px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    font-weight: bold;
+}
+
+.informacao-5 .bloco-descricao {
+    font-size: 20px; /* Tamanho do texto */
+    color: var(--cor-texto-claro); /* Cor do texto */
+    margin-top: 10px; /* Espaçamento acima do texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .informacao-5 .bloco {
+        max-width: calc(50% - 10px); /* Dois blocos por linha em telas menores */
+    }
+
+    .informacao-5 .titulo-centralizado {
+        font-size: 24px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .informacao-5 .bloco-imagem-redonda {
+        width: 80px; /* Reduz o tamanho da imagem em telas menores */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .informacao-5 .bloco {
+        max-width: 100%; /* Um bloco por linha em telas pequenas */
+    }
+
+    .informacao-5 .titulo-centralizado {
+        font-size: 20px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .informacao-5 .bloco-imagem-redonda {
+        width: 60px; /* Reduz ainda mais o tamanho da imagem em telas pequenas */
+        height: 60px;
+    }
+}
