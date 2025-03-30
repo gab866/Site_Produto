@@ -3,4 +3,5 @@
 ## teste commit
 
 teste de merge
-teste de merge 3
+teste de merge2 
+teste de merge3
