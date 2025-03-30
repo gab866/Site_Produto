@@ -5,7 +5,7 @@
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     padding: 60px 5%; /* Padding mais responsivo */
-    background-image: url('/assets/img/fundonovo.png');
+    background-image: url('/img/fundonovo.png');
     background-size: cover;
     background-position: center;
     color: var(--cor-texto-claro);
